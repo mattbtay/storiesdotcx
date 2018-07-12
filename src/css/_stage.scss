@@ -25,3 +25,16 @@ header {
     }
 
 }
+
+.modal {
+    width:33vw;
+    height:33vh;
+    background:#fff;
+    border:2px solid red;
+    position:absolute;
+    top:5vh;
+}
+
+.modal-hidden {
+    display:none;
+}

@@ -2,14 +2,31 @@ import React from "react";
 
 class Stage extends React.Component {
 
+
+    showModal = () => {
+        console.log('shown');
+        const emailVal = document.getElementById('emailHolder');
+        console.log(emailVal.value);
+        let modalStatus = 1;
+    }
+
     render(){
+
+        let modalStatus = 0;
+
         return (
             <div className="stage">
+
                 <header>
                     <p>stories.cx</p>
                 </header>
-                <p>stage</p>
-                <div>
+
+                <div className="signup">
+                    <input type="text" id="emailHolder" placeholder="your email here" />
+                    <button id="submitBtn" onClick={this.showModal}>Sign me up</button>
+                </div>
+
+                <div className={`modal modal-hidden`}>
                     <form action="https://twitter.us18.list-manage.com/subscribe/post" method="POST" _lpchecked="1">
                         <input type="hidden" name="u" value="92ae1cfac5e13133b0285187a" />
                         <input type="hidden" name="id" value="7b51010392" />
@@ -19,7 +36,7 @@ class Stage extends React.Component {
                         <input type="submit" className="formEmailButton" name="submit" value="Subscribe to list" />
                     </form>
                 </div>
-                <p>stage</p>
+
             </div>
         )
     }
