@@ -32,9 +32,11 @@ class Stage extends React.Component {
                     <p>stories.cx</p>
                 </header>
 
+                <p className="intro">Fam pug beard, wolf cray irony narwhal salvia taxidermy copper mug cardigan synth kinfolk vexillologist. Adaptogen woke disrupt etsy XOXO literally master cleanse vegan synth. Palo santo cold-pressed portland wolf try-hard cronut jianbing aesthetic prism mixtape occupy tbh.</p>
+
                 <div className="signup">
-                    <input type="text" ref={ this.emailRef } placeholder="your email here" />
-                    <button id="submitBtn" onClick={this.showModal}>Sign me up</button>
+                    <input className="signup-email" type="text" ref={ this.emailRef } placeholder="your email here" />
+                    <button className="signup-btn" onClick={this.showModal}>Sign me up</button>
                 </div>
 
                 <div className={`modal-holder ${this.state.modal ? 'modal-holder-active' : ''}`}></div>
