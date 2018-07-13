@@ -32,12 +32,21 @@ class Stage extends React.Component {
                     <p>stories.cx</p>
                 </header>
 
+                <h1 className="logo">stories.(customer experience)</h1>
+
                 <p className="intro">Fam pug beard, wolf cray irony narwhal salvia taxidermy copper mug cardigan synth kinfolk vexillologist. Adaptogen woke disrupt etsy XOXO literally master cleanse vegan synth. Palo santo cold-pressed portland wolf try-hard cronut jianbing aesthetic prism mixtape occupy tbh.</p>
 
                 <div className="signup">
-                    <input className="signup-email" type="text" ref={ this.emailRef } placeholder="your email here" />
-                    <button className="signup-btn" onClick={this.showModal}>Sign me up</button>
+                        <div className="email-wrap">
+                            <input className="signup-email" type="text" ref={ this.emailRef } placeholder="your email here" />
+                        </div>
+                        <button className="signup-btn" onClick={this.showModal}>sign me up</button>
+
                 </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon fill="white" points="0,100 100,0 100,100"/>
+                </svg>
 
                 <div className={`modal-holder ${this.state.modal ? 'modal-holder-active' : ''}`}></div>
                 <div className={`modal ${!this.state.modal ? 'modal-hidden' : ''}`}>

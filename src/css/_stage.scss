@@ -1,7 +1,12 @@
 .stage {
     height:100vh;
     max-height:1000px;
-    background:url('https://picsum.photos/1400/2000') center top no-repeat;
+    background:linear-gradient(
+        rgba(#e66465, 0.6),
+        rgba(#9198e5, 0.6)
+      ),
+        url('/images/header/rob-bye-98949-unsplash.jpg');
+
     background-size:cover;
     display:flex;
     flex-direction:column;
@@ -9,6 +14,14 @@
     align-items:center;
     position:relative;
 }
+
+svg {
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+  }
 
 header {
     position:absolute;
@@ -26,31 +39,56 @@ header {
 
 }
 
+.logo {
+    font-size:65px;
+    color:#fff;
+    text-shadow:2px 2px 5px rgba(0,0,0,.4);
+    margin-bottom:100px;
+    transform:rotate(-2deg);
+}
+
 .intro {
     font-size:22px;
     width:70%;
-    margin-bottom:40px;
+    margin-bottom:100px;
     background:rgba(209, 209, 20, .9);
     color:#000;
     transform:rotate(-2deg);
     padding:10px;
+    line-height:1.6em;
+}
+
+.signup {
+    display:flex;
+    flex-direction:row;
+}
+
+.email-wrap {
+    background: linear-gradient(#e66465, #9198e5);
+    margin-right:10px;
+    padding:2px;
 }
 
 .signup-email {
-    width:250px;
-    height:35px;
-    border:1px solid #000;
+    width:30vw;
+    height:4vw;
+    border:none;
     font-size:22px;
-    margin-right:20px;
+    background: #fff;
+    padding:0 10px;
+    font-weight:300;
 }
 
 .signup-btn {
-    height:45px;
-    width:75px;
-    background:green;
-    border:1px solid darkgreen;
-    color:#fff;
+    height:4vw;
+    padding:2px 15px;
+    background:#fff;
+    border:none;
+    font-size:18px;
+    color:#000;
     cursor:pointer;
+    align-self:center;
+    font-weight:300;
 }
 
 .modal {
