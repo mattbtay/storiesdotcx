@@ -43,14 +43,14 @@ header {
     font-size:65px;
     color:#fff;
     text-shadow:2px 2px 5px rgba(0,0,0,.4);
-    margin-bottom:100px;
+    margin-bottom:50px;
     transform:rotate(-2deg);
 }
 
 .intro {
     font-size:22px;
     width:70%;
-    margin-bottom:100px;
+    margin-bottom:50px;
     background:rgba(209, 209, 20, .9);
     color:#000;
     transform:rotate(-2deg);
@@ -82,10 +82,10 @@ header {
 .signup-btn {
     height:4vw;
     padding:2px 15px;
-    background:#fff;
-    border:none;
+    background:none;
+    border:2px solid rgba(209, 209, 20, .9);
     font-size:18px;
-    color:#000;
+    color:#fff;
     cursor:pointer;
     align-self:center;
     font-weight:300;
