@@ -1,10 +1,17 @@
 .recent {
-    height:200px;
     display:flex;
     justify-content:center;
-    align-content:center;
+    width:90%;
+    margin:0 auto;
+    flex-wrap:wrap;
+
+    img {
+        max-width:100%;
+        margin:10px;
+    }
 }
 
 .recent-title {
     text-align:center;
+    margin-bottom:20px;
 }

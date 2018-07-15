@@ -1,0 +1,23 @@
+.logo {
+    font-size:96px;
+    color:#fff;
+    margin-bottom:50px;
+    transform:rotate(-2deg);
+    font-weight:400;
+
+    span {
+        background:rgba(209, 209, 20, .9);
+        padding:0px 25px 15px 10px;
+        margin-left:10px;
+    }
+
+    @media screen and (max-width:600px) {
+        font-size:15vw;
+    }
+
+    @media screen and (max-width:480px) {
+        margin-bottom:15px;
+        margin-top:15px;
+    }
+
+}
