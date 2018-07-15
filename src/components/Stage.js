@@ -76,7 +76,7 @@ class Stage extends React.Component {
                                 <input type="hidden" name="id" value="7b51010392" />
 
 
-                                <input className="modal-input" type="text" placeholder="name" name="MERGE1" id="MERGE1" size="25"  />
+                                <input className="modal-input" autoComplete="off" type="text" placeholder="name" name="MERGE1" id="MERGE1" size="25"  />
                                 <input className="modal-input" type="email" placeholder="email address" name="MERGE0" id="MERGE0" value={!!this.state.email ? this.state.email : ''}   />
 
                                 <ul className="interestgroup_field checkbox-group">
