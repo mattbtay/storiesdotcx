@@ -45,7 +45,7 @@ class Stage extends React.Component {
 
                     <span>After all, Customer experience is where organizations have the chance to go beyond just products and services to create emotional impact and brand loyalty. We collectively celebrate the organizations that get it right. We thrash the organizations that miss the mark.</span>
 
-                    <span>stories.cx is a weekly newsletter that gathers the best and worst CX stories and ships them to your inbox every Friday. 1 brand, 3 stories in less that 5 minutes.</span>
+                    <span>stories.cx is a weekly newsletter that gathers the best and worst CX stories and ships them to your inbox every Friday. 1 brand, 3 stories in less than 5 minutes.</span>
 
                 </div>
 
@@ -80,10 +80,10 @@ class Stage extends React.Component {
                                 <input className="modal-input" type="email" placeholder="email address" name="MERGE0" id="MERGE0" value={!!this.state.email ? this.state.email : ''}   />
 
                                 <ul className="interestgroup_field checkbox-group">
-                                    <li className="!margin-bottom--lv2"> <label className="checkbox" htmlFor="gdpr_30905"><input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="gdpr_30905" name="gdpr[30905]" value="Y" className="av-checkbox" /><span>Please communicate with my via email</span> </label> </li>
+                                    <li className="!margin-bottom--lv2"> <label className="checkbox" htmlFor="gdpr_30905"><input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="gdpr_30905" name="gdpr[30905]" value="Y" className="av-checkbox" /><span>I would like to receive weekly email newsletters</span> </label> </li>
                                 </ul>
 
-                                <input type="submit" className="formEmailButton" name="submit" value="Subscribe to list" />
+                                <input type="submit" className="formEmailButton" name="submit" value="Sign me up" />
                             </form>
 
                         </div>
