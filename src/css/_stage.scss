@@ -1,8 +1,8 @@
 .stage {
-    height:800px;
+    height:850px;
     background:linear-gradient(
         rgba(#e66465, 0.6),
-        rgba(#9198e5, 0.6)
+        rgba(#8389ce, 0.6)
       ),
         url('/images/header/rob-bye-98949-unsplash.jpg') center center no-repeat;
 
@@ -12,6 +12,11 @@
     justify-content: center;
     align-items:center;
     position:relative;
+
+    > *:not(svg) {
+        position:relative;
+        top:-40px;
+    }
 
     @media screen and (max-width:480px) {
         height:auto;
@@ -63,7 +68,7 @@ header {
         width:96%;
         order:3;
         margin-bottom:0;
-        margin-top:50px;
+        margin-top:20px;
     }
 
     @media screen and (max-width:480px) {
