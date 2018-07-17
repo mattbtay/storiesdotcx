@@ -5,7 +5,7 @@ class RecentStories extends React.Component {
     render(){
         return (
             <React.Fragment>
-            <h2 className="recent-title">featuring</h2>
+            <h2 className="recent-title">recent stories</h2>
             <div className="recent">
                 <div><img src="/images/logos/thyssenkrupp.jpg" alt="thyssenkrupp elevator" /></div>
                 <div><img src="/images/logos/nest_logo.jpg" alt="thyssenkrupp elevator" /></div>
