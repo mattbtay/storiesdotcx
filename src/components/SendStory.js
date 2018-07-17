@@ -9,7 +9,12 @@ class SendStory extends React.Component {
                     <form name="story-submissions" method="POST" netlify>
                         <input type="hidden" name="form-name" value="story-submissions" />
                         <input name="name" type="text" />
-                        <textarea name="story" />
+                        <input name="email" type="email" />
+
+                        <div>
+                            <input name="brand" type="text" />
+                            <textarea name="story" />
+                        </div>
                         <button type="submit">send</button>
                     </form>
                 </div>
