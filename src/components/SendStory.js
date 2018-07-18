@@ -11,18 +11,22 @@ class SendStory extends React.Component {
                 <div className="storyForm--wrap">
                     <form name="story-submissions" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                         <div>
-                            <textarea name="Story" />
+                            <textarea placeholder="Tell us about your experience" className="story--storyContent" name="Story" />
                         </div>
                         <div>
                             <input type="hidden" name="form-name" value="story-submissions" />
-                            <input name="Name" type="text" autoComplete="off" />
-                            <input name="Email Address" type="email" />
-                        </div>
-                        <div>
-                            <input name="Company" type="text" />
+
+                                <input className="story--company" autoComplete="off" placeholder="What company is your story about?" name="Company" type="text" />
+
 
                         </div>
-                        <button type="submit">send</button>
+                        <div className="story--userInfo">
+                            <input name="Name" placeholder="Your name" autoComplete="off" type="text" />
+                            <input name="Email Address" placeholder="Email address" type="email" />
+                        </div>
+                        <div className="story--submitWrap">
+                            <button className="story--submit" type="submit">Send <span role="img" aria-label="fire">🔥</span></button>
+                        </div>
                     </form>
                 </div>
             </div>

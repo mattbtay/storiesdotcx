@@ -1,9 +1,9 @@
 .section {
-    padding:25px 0;
+    padding:50px 0;
     margin-top:25px;
 }
 .section--sendstory {
-    background: lightgray;
+    background: #f1f1f1;
 
 }
 
@@ -11,6 +11,7 @@
     display:flex;
     justify-content:center;
     align-content:center;
+    width:100%;
 
     div {
         margin:0 10px;
@@ -19,9 +20,21 @@
     form {
         align-self:center;
         display:flex;
-        flex-direction:row;
-        justify-content:space-between;
+        flex-direction:column;
+        justify-content:center;
+        width:75%;
 
+        input, textarea {
+            padding:10px;
+            border:3px solid rgba(0,0,0,.1);
+            border-radius:0;
+            margin-bottom:5px;
+            font-size:16px;
+
+            &:focus {
+                outline:none;
+            }
+        }
 
         div input {
             width:100%;
@@ -30,6 +43,42 @@
 
     }
 
+}
+
+.story--userInfo {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+    input:first-child {
+        margin-right:10px;
+    }
+
+}
+
+.story--storyContent {
+    width:100%;
+    height:100px;
+}
+
+.story--submitWrap {
+    display:flex;
+    justify-content: center;
+}
+
+.story--submit {
+    padding:15px 20px;
+    background:#8389ce;
+    color:#fff;
+    text-align:right;
+    font-size:20px;
+    margin-top:10px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.story--company {
+    width:50%!important;
 }
 
 
