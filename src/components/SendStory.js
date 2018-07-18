@@ -45,7 +45,7 @@ class SendStory extends React.Component {
         return (
             <div className="section section--sendstory">
 
-                <h2 className="recent-title">send us your story</h2>
+                <h2  className="recent-title">{FormHidden ? 'Thank you' : 'send us your story'}</h2>
 
                 <div className="storyForm--wrap">
                     <form className={FormHidden ? 'form-hidden': ''} onSubmit={ this.handleSubmit }>
@@ -67,13 +67,13 @@ class SendStory extends React.Component {
                         </div>
                     </form>
 
-                    <div className={ `thankyou-message' + ${!FormHidden ? 'form-hidden' : ''}` }>
+                    <div className={ `thankyou-message ${!FormHidden ? 'form-hidden' : ''}` }>
 
-                        <div className="giphy-wrap"><iframe title="giphy tom hanks cause thanks" src="https://giphy.com/embed/KJ1f5iTl4Oo7u" width="100%" height="100%" frameBorder="0" className="giphy-embed giphy" allowFullScreen></iframe></div>
+                        <img className="giphy" src="https://media.giphy.com/media/KJ1f5iTl4Oo7u/200w_d.gif" alt="tom hanks saying thanks" />
 
-                        <h2>Thank you for your submission</h2>
+                        <p className="thanks-message">Thanks for the story, we're working on compiling a great list for our newsletter, if needed we may reach out to you for more infomation.</p>
 
-                        <button onClick={ this.resetForm }>Another?</button>
+                        <button className="story--submit" onClick={ this.resetForm }>Another?</button>
 
                     </div>
 
