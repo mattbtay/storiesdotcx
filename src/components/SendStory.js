@@ -11,6 +11,10 @@ class SendStory extends React.Component {
     constructor(props) {
         super(props);
         this.state = { Name: "", Email: "", Story: "", Company: "", FormHidden: 0 };
+
+        this.resetForm = this.resetForm.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+
       }
 
       /* Here’s the juicy bit for posting the form submission */
