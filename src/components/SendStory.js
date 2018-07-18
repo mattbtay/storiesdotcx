@@ -10,7 +10,7 @@ class SendStory extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { Name: "", Email: "", Message: "", Company: "" };
+        this.state = { Name: "", Email: "", Story: "", Company: "" };
       }
 
       /* Here’s the juicy bit for posting the form submission */
