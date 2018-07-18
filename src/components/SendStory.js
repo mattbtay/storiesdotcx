@@ -26,9 +26,7 @@ class SendStory extends React.Component {
           body: encode({ "form-name": "story-submissions", ...this.state })
         })
           .then(() => {
-              this.setState = {
-                  FormHidden:1
-                }
+              this.setState({FormHidden:1});
                 //console.log('submitted');
           })
           .catch(error => alert(error));
@@ -36,16 +34,7 @@ class SendStory extends React.Component {
         e.preventDefault();
       };
 
-      resetForm = e => {
-        e.preventDefault();
-
-        this.setState({
-            Story: "",
-            Company:"",
-            FormHidden: 0
-        })
-
-      }
+      resetForm = e => this.setState({Story: "", Company:"", FormHidden: 0});
 
       handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
