@@ -18,9 +18,7 @@ class Confirmation extends React.Component {
 
         return (
             <React.Fragment>
-            {actionText}
-
-
+                {actionText}
                 <RecentStories />
                 <Footer />
             </React.Fragment>
