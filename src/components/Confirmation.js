@@ -8,7 +8,6 @@ class Confirmation extends React.Component {
         return (
             <React.Fragment>
                 <Content />
-                <Footer />
             </React.Fragment>
         )
     }

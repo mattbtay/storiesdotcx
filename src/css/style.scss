@@ -8,6 +8,8 @@
 @import '_sendstory';
 @import '_footer';
 
+@import '_content';
+
 html, body, #main {
     display:flex;
     flex-direction:column;
