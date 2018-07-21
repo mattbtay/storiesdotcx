@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "watch": "concurrently --names \"webpack, node-sass\" --prefix name \"npm run start\" \"npm run styles:watch\"",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "eject": "react-scripts eject",
     "styles": "node-sass --output-style compressed -o src/css src/css",
     "styles:watch": "node-sass --watch --output-style compressed -o src/css src/css"
