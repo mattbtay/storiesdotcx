@@ -1,6 +1,5 @@
 import React from "react";
-import RecentStories from "./RecentStories";
-import SendStory from "./SendStory";
+import Content from './Content';
 import Footer from "./Footer";
 
 class Confirmation extends React.Component {
@@ -8,8 +7,7 @@ class Confirmation extends React.Component {
     render(){
         return (
             <React.Fragment>
-                <RecentStories />
-                <SendStory />
+                <Content />
                 <Footer />
             </React.Fragment>
         )
