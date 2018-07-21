@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 
-class Content extends React.Component {
+class ConfirmContent extends React.Component {
 
     render(){
         return (
@@ -21,11 +21,11 @@ class Content extends React.Component {
                         <Logo />
                     </div>
 
-                    <h1>Almost finished</h1>
+                    <h1 className="confirm__title"><span>Almost finished</span></h1>
 
-                    <p>We need to confirm your email address.</p>
+                    <p className="confirm__text"><span>We need to confirm your email address.</span></p>
 
-                    <p>To complete the subscription process, please click the link in the email we just sent you.</p>
+                    <p className="confirm__text"><span>To complete the subscription process, please click the link in the email we just sent you.</span></p>
 
                 </div>
 
@@ -38,4 +38,4 @@ class Content extends React.Component {
         )}
 }
 
-export default Content;
+export default ConfirmContent;

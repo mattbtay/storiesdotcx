@@ -18,3 +18,18 @@
 .svg-top {
     transform:rotate(180deg);
 }
+
+.confirm__title {
+    margin-bottom:10px;
+    transform:rotate(-2deg);
+}
+
+.confirm__text {
+    transform:rotate(-2deg);
+}
+
+.confirm__title span, .confirm__text span  {
+    background:rgba(209, 209, 20, .9);
+    padding:2px 5px;
+
+}
