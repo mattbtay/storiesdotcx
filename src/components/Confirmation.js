@@ -7,6 +7,7 @@ import ThanksContent from './ThanksContent';
 class Confirmation extends React.Component {
 
     render(){
+
         var actionText;
         let urlParams = new URLSearchParams(window.location.search);
         let urlString = urlParams.get('action');

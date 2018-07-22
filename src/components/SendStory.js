@@ -63,7 +63,7 @@ class SendStory extends React.Component {
                             <input name="Email" placeholder="Email address" value={ Email } onChange={this.handleChange} type="email" />
                         </div>
                         <div className="story--submitWrap">
-                            <button className="story--submit" type="submit">Send <span role="img" aria-label="fire">🔥</span></button>
+                            <button className="story--submit" disabled={!Email || !Name || !Company ? 'true' : ''} type="submit">Send <span role="img" aria-label="fire">🔥</span></button>
                         </div>
                     </form>
 
