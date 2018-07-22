@@ -7,7 +7,7 @@ class Footer extends React.Component {
             <footer>
                 <p>Copyright &copy; 2018</p>
 
-                <div><a href="/terms">terms</a></div>
+                <div><a href="/terms">Terms and Conditions</a></div>
             </footer>
         )
     }

@@ -1,0 +1,38 @@
+.toolbar {
+    width:100%;
+    background:#8389ce;
+    display:flex;
+    justify-content: space-between;
+
+    * > {
+        align-self:center;
+    }
+    padding:15px 20px;
+}
+
+.toolbar .logo {
+    transform:none;
+    margin-bottom:0;
+    height:100%;
+    font-size:20px;
+
+    span {
+        margin-left:3px;
+        padding:0 5px 3px 2px;
+    }
+
+}
+
+.toolbar .navigation a {
+    border:0;
+    background:none;
+    color:#fff;
+    font-size:14px;
+    margin-left:10px;
+    font-weight:300;
+    text-decoration:none;
+
+    &:focus {
+        outline:none;
+    }
+}
