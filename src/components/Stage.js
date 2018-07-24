@@ -41,11 +41,11 @@ class Stage extends React.Component {
 
                 <div className="intro">
 
-                    <span>People love customer experience stories. We empathize with them.</span>
+                    <span>Everyone loves a good customer experience story. After all, great CX goes beyond just winning our business - It’s where brands win our hearts. </span>
 
-                    <span>After all, Customer experience is where organizations have the chance to go beyond just products and services to create emotional impact and brand loyalty. We collectively celebrate the organizations that get it right. We thrash the organizations that miss the mark.</span>
+                    <span>We believe great customer experiences are worth celebrating.</span>
 
-                    <span>stories.cx is a weekly newsletter that gathers the best and worst CX stories and ships them to your inbox every Friday. 1 brand, 3 stories in less than 5 minutes.</span>
+                    <span>stories.cx is a weekly newsletter that gathers the best CX stories and ships them to your inbox every Friday. Sign up the 5 minute read and learn which brands are ready to exceed your expectations. </span>
 
                 </div>
 
