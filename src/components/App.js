@@ -8,12 +8,12 @@ class App extends React.Component {
 
     render(){
         return (
-            <React.Fragment>
+            <div>
                 <Stage />
                 <RecentStories />
                 <SendStory />
                 <Footer />
-            </React.Fragment>
+            </div>
         )
     }
 }
