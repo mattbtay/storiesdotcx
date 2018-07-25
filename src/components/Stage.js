@@ -12,6 +12,7 @@ class Stage extends React.Component {
         };
 
         this.handleChange = this.handleChange.bind(this);
+        this.handleEnter = this.handleEnter.bind(this);
       }
 
     showModal = () => {
@@ -30,6 +31,14 @@ class Stage extends React.Component {
         this.setState({
             modal:0
         })
+    }
+
+    handleEnter = (e) => {
+        if(e.key === 'Enter'){
+            this.setState({email: e.target.value})
+            console.log(this.state.email)
+            this.showModal();
+          }
     }
 
     render(){
@@ -51,13 +60,13 @@ class Stage extends React.Component {
 
                 <div className="signup">
                         <div className="email-wrap">
-                            <input className="signup-email" type="email" value={ this.state.email } onChange={ this.handleChange } placeholder="✉️" />
+                            <input className="signup-email" type="email" value={ this.state.email } onKeyPress={ this.handleEnter } onChange={ this.handleChange } placeholder="✉️" />
                         </div>
                         <button className="signup-btn" disabled={!this.state.email} onClick={this.showModal}>sign me up</button>
 
                 </div>
 
-                <svg className="svg-bottom" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <svg className="svg-bottom" width="100" height="100!impo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polygon fill="white" points="0,100 100,0 100,100"/>
                 </svg>
 
