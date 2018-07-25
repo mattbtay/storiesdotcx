@@ -1,11 +1,13 @@
+.recentStories {
+    padding:50px 0;
+}
+
 .recent {
     display:flex;
     justify-content:space-around;
     width:90%;
     margin:0 auto;
     flex-wrap:wrap;
-    margin-top:20px;
-    margin-bottom:50px;
 
     div {
         align-self:center;
@@ -27,5 +29,5 @@
 
 .recent-title {
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:40px;
 }

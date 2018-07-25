@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://s.codepen.io/boomerang/iFrameKey-de6a3692-172a-c0b2-d593-e0747c343211/index.html -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js"></script><script src="./css_live_reload_init-654f8ff86ff57fe42b9638d3bacf774c90ce371a1c6d0ae81f5d12823b0334eb.js"></script><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"><link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111"><link rel="canonical" href="https://codepen.io/mattbtay/pen/EpZNwW">
+
+
+<style type="text/css" class="cp-pen-styles">@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://picsum.photos/800/600/?random");
+  background-size: cover;
+  height: 98vh;
+  font-size: 16px;
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 300;
+}
+
+.optionSelector__outerWrap {
+  position: absolute;
+  right: 5%;
+  top: 15vh;
+}
+
+.optionSelector {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  width: 350px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  transform-origin: top right;
+  transition: transform .5s, opacity .1s .3s, width .3s .2s;
+}
+.optionSelector.hide {
+  width: 50px;
+  opacity: 0;
+  transform: translateX(-5px) skew(-80deg) scale(0);
+}
+
+.optionSelector__toggle {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  color: black;
+  padding: 1px 5px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.optionSelector__wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.optionSelector__item {
+  background: #fff;
+}
+
+.optionSelector__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.optionSelector__content {
+  max-height: 0;
+  height: 0;
+  transition: .5s ease height, .5s ease max-height;
+  background: green;
+}
+
+.optionSelector__content.active {
+  height: 100px;
+  max-height: 400px;
+}
+
+.optionSelector__nav {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.btn {
+  background: gray;
+  padding: 8px 12px;
+  width: 125px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+</style></head><body>
+<div class="optionSelector__outerWrap">
+  
+  <div class="optionSelector__toggle">X</div>
+  
+  <div class="optionSelector" style="height: 291px;">
+    
+    <div class="optionSelector__wrap">
+    <div class="optionSelector__item">
+        <div class="optionSelector__header">
+          <p>Wall finish</p>
+          <a href="https://s.codepen.io/boomerang/iFrameKey-de6a3692-172a-c0b2-d593-e0747c343211/index.html#">x</a>
+        </div>
+        <div class="optionSelector__content"></div>
+    </div>
+    
+    <div class="optionSelector__item">
+        <div class="optionSelector__header">
+          <p>Wall finish</p>
+          <a href="https://s.codepen.io/boomerang/iFrameKey-de6a3692-172a-c0b2-d593-e0747c343211/index.html#">x</a>
+        </div>
+        <div class="optionSelector__content"></div>
+    </div>
+    
+    <div class="optionSelector__item">
+        <div class="optionSelector__header">
+          <p>Wall finish</p>
+          <a href="https://s.codepen.io/boomerang/iFrameKey-de6a3692-172a-c0b2-d593-e0747c343211/index.html#">x</a>
+        </div>
+        <div class="optionSelector__content"></div>
+    </div>
+    
+    <div class="optionSelector__item">
+        <div class="optionSelector__header">
+          <p>Wall finish</p>
+          <a href="https://s.codepen.io/boomerang/iFrameKey-de6a3692-172a-c0b2-d593-e0747c343211/index.html#">x</a>
+        </div>
+        <div class="optionSelector__content active"></div>
+    </div>
+  </div>
+  
+    <div class="optionSelector__nav">
+        <a class="btn" href="https://s.codepen.io/boomerang/iFrameKey-de6a3692-172a-c0b2-d593-e0747c343211/index.html#">previous</a>
+        <a class="btn" href="https://s.codepen.io/boomerang/iFrameKey-de6a3692-172a-c0b2-d593-e0747c343211/index.html#">next</a>
+    </div>
+  
+  </div>
+  
+</div>
+<script src="./stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script><script src="./jquery.min.js"></script>
+<script>var optHeight;
+
+$('.optionSelector__item').click(function (e) {
+  e.stopPropagation();
+  $('.active').removeClass('active');
+  $(this).children('.optionSelector__content').toggleClass('active');
+  optHeight = $('.optionSelector').css('height');
+  $('.optionSelector').css('height', optHeight);
+});
+
+
+
+
+
+$('.optionSelector__toggle').click(function () {
+  $('.optionSelector').addClass('hide');
+  setTimeout(function () {
+    $('.optionSelector').removeClass('hide');
+  }, 2000);
+});
+//# sourceURL=pen.js
+</script>
+</body></html>

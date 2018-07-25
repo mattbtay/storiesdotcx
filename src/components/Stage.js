@@ -57,7 +57,7 @@ class Stage extends React.Component {
 
                 </div>
 
-                <svg className="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <svg className="svg-bottom" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polygon fill="white" points="0,100 100,0 100,100"/>
                 </svg>
 
