@@ -50,17 +50,15 @@ class Stage extends React.Component {
 
                 <div className="intro">
 
-                    <span>Everyone loves a good customer experience story. After all, great CX goes beyond just winning our business - It’s where brands win our hearts. </span>
+                    <span>Great customer experiences are worth celebrating.</span>
 
-                    <span>We believe great customer experiences are worth celebrating.</span>
-
-                    <span>stories.cx is a weekly newsletter that gathers the best CX stories and ships them to your inbox every Friday. Sign up the 5 minute read and learn which brands are ready to exceed your expectations. </span>
+                    <span>stories.cx is a weekly newsletter that gathers the best CX stories and ships them to your inbox every Friday. Sign up for the 5 minute read and learn which brands step up to win our business AND our hearts.</span>
 
                 </div>
 
                 <div className="signup">
                         <div className="email-wrap">
-                            <input className="signup-email" type="email" value={ this.state.email } onKeyPress={ this.handleEnter } onChange={ this.handleChange } placeholder="✉️" />
+                            <input className="signup-email" type="email" value={ this.state.email } onKeyPress={ this.handleEnter } onChange={ this.handleChange } placeholder="Email address" />
                         </div>
                         <button className="signup-btn" disabled={!this.state.email} onClick={this.showModal}>sign me up</button>
 

@@ -50,16 +50,17 @@ header {
     width:70%;
     margin-bottom:50px;
     color:#000;
-    transform:rotate(-2deg);
+    //transform:rotate(-2deg);
     padding:10px;
     line-height:1.6em;
 
     span {
         background:rgba(209, 209, 20, .9);
         display:inline-block;
-        padding:7px 10px;
+        padding:8px 12px;
         margin-bottom:10px;
         font-size:22px;
+        font-weight:300;
         color:#fff;
     }
 
